@@ -3,7 +3,7 @@ import { Toaster } from "react-hot-toast";
 
 import HomePage from "./pages/home/HomePage";
 import LoginPage from "./pages/auth/login/LoginPage";
-import SignupPage from "./pages/auth/signup/SignupPage";
+import SignUpPage from "./pages/auth/signup/SignUpPage";
 import ProfilePage from "./pages/profile/ProfilePage";
 import NotificationPage from "./pages/notification/NotificationPage";
 
@@ -53,7 +53,7 @@ function App() {
           />
           <Route
             path="/signup"
-            element={!authUser ? <SignupPage /> : <Navigate to="/" />}
+            element={!authUser ? <SignUpPage /> : <Navigate to="/" />}
           />
           <Route
             path="/notifications"
